@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+
+
+function corey(){
+
+   open -a "Google Chrome" https://www.youtube.com/c/Coreyms/videos
+
+}
+
+function cloudguru() {
+
+  open -a "Google Chrome" http://cloudguru.com
+
+}
+
+function() jira() {
+
+  open https://jira.cloudera.com
+}

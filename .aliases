@@ -1,0 +1,13 @@
+
+#Detect which ls flavor is running
+if ls --color > /dev/null 2>&1; then # GNU `ls`
+	colorflag="--color"
+else # macOS `ls`
+	colorflag="-G"
+	export LSCOLORS='BxBxhxDxfxhxhxhxhxcxcx'
+fi
+
+alias la="ls -lahF ${colorflag}"
+alias ..="cd .."
+alias l="ls -lF ${colorflag}"
+alias hg="history | grep"
